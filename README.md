@@ -1,25 +1,11 @@
-## Please, fork this repo first!
+## Setup
 
-# Instructions
+Since github has the limit of 2GB of weights, I had to upload them to [Google Drive](https://drive.google.com/file/d/1-3Ll1_82AWtzPd2VuGlxPZZCCBlUXu4D/view?usp=sharing). Please, download the weights and put the to the `/weights` folder. 
 
-- Your goal is to implement a model using any python library
-that will recognize the text from the picture as accurate as possible.
+## Work 
 
-- The dataset contained in `data/public_data` consist of images with English/Chinese texts
-and `info.json` file with all ground truth texts.
+I began with the search of the models and the first one was [TrOCR](https://huggingface.co/docs/transformers/model_doc/trocr). Despite the fact that it was good with English text, it has shown low performance with Chinese, so i decided to switch to the [Donut model](https://github.com/NielsRogge/Transformers-Tutorials/tree/master/Donut). 
 
-- You should implement class located in `ocr_model.py`. Feel free to write any code you want,
-but keep in mind that the model should match `OCRModel` interface, so I will be able to easily test it.
-You can check your recognition quality on public data with `main.py` script.
+In contrast to TrOCR, it was  better with Chinese symbols, so I decided to give it a try. But, since I had to upgrade the quality, I started looking for the datasets to teach my model on. Between those who required Chinese social networks accounts and those who had prehistoric firmats .mdb, I've finially managed to find [this one](https://github.com/GitYCC/traditional-chinese-text-recogn-dataset). Despite it being synthetic, it has shown good quality snd was available in an comfortable format, so I went eoth this one.
 
-- Your grade would depend on both the accuracy of your model
-and the quality of your code.
-
-  -  To measure your accuracy I will download your fork and 
-run your model on the secret version of dataset (with another, but conceptually similar screenshots).
-
-
-Good luck! And feel free to text me via email if you have any questions:
-
-[aleksandr.fedotov@jetbrains.com](aleksandr.fedotov@jetbrains.com)
-
+More details on the training phase could be found in the `/notebooks` section. 
