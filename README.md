@@ -1,6 +1,6 @@
 ## Setup
 
-Since github has the limit of 2GB of weights, I had to upload them to [Google Drive](https://drive.google.com/file/d/1-3Ll1_82AWtzPd2VuGlxPZZCCBlUXu4D/view?usp=sharing). Please, download the weights and put the to the `/weights` folder. 
+Since github has the limit of 2GB of weights, I had to upload them to [Google Drive](https://drive.google.com/file/d/1-3Ll1_82AWtzPd2VuGlxPZZCCBlUXu4D/view?usp=sharing). Please, download the weights and put them to the `/weights` folder. 
 
 ## Work 
 
